@@ -15,6 +15,9 @@ const Navbar = () => {
         <div>
           <Link to="./signin">sgin In</Link>
         </div>
+        <div>
+          <Link to="./AddCart"><img src="icon.png" alt="icon" className="icon" /></Link>
+        </div>
       </div>
     </nav>
   );

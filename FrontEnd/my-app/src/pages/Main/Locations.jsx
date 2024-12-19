@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "./Footer";
+import "./Footer.css";
   
 const Locations = () => {
     return(
@@ -40,9 +42,11 @@ const Locations = () => {
          </div>
             
         </div>
+        <Footer/>
     </div>
     );
-}
+
+  }
 
 const style = {
     Div: {

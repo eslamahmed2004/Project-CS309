@@ -1,0 +1,103 @@
+/* Navbar */
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icon {
+   margin-top: 22px ;
+   margin-left: 15%;
+    height: 70px;
+}
+
+.buttonLan, .buttonflag, .buttonperson {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    font-family: "Arial", sans-serif;
+}
+
+.details-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.order-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.order-items {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.order-items li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+.available-items-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+/* Buttons */
+.item-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.item-button:hover {
+    background-color: #0056b3;
+}
+
+.more-orders-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-orders-link:hover {
+    text-decoration: underline;
+}

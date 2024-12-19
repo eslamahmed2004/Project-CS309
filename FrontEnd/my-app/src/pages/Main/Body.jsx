@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const Food = () => {
   return (
     <div className="container" style={styles.container}>
       <Link to="/restaurant" style={styles.Link}>
         <div style={styles.box}>
-          <h1 style={styles.H1}>اطلب الطعام</h1>
-          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 200 50">
-            <rect x="0" y="0" width="200" height="50" rx="25" ry="25" fill="maroon" stroke="orange" strokeWidth="3"/>
-            <text x="50%" y="50%" fontFamily="Arial" fontSize="20" fill="white" textAnchor="middle" alignmentBaseline="middle">Order now</text>
-          </svg>
+          <img src="/wallpaperflare.com_wallpaper(3).jpg" alt="icon" style={styles.icon} />
+          <h1 style={styles.H1}>Order Food</h1>
+          <img src="/order_now.svg" alt="icon" style={styles.orderIcon} />
           <p style={styles.Body}>
             توصيل مجاني وعروض حصرية وأكثر لدى شركائنا من المطاعم.
           </p>
@@ -19,11 +17,9 @@ const Food = () => {
 
       <Link to="/drink" style={styles.Link}>
         <div style={styles.box}>
-          <h1 style={styles.H1}> اطلب التسالي </h1>
-          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 200 50">
-            <rect x="0" y="0" width="200" height="50" rx="25" ry="25" fill="maroon" stroke="orange" strokeWidth="3"/>
-            <text x="50%" y="50%" fontFamily="Arial" fontSize="20" fill="white" textAnchor="middle" alignmentBaseline="middle">Order now</text>
-          </svg>
+          <img src="/wallpaperflare.com_wallpaper(4).jpg" alt="icon" style={styles.icon} />
+          <h1 style={styles.H1}>Order Snacks</h1>
+          <img src="/order_now.svg" alt="icon" style={styles.orderIcon} />
           <p style={styles.Body}>
             لا تضيع وقتك في الانتظار . نوصلك لك الطعام في أسرع وقت.
           </p>
@@ -32,11 +28,9 @@ const Food = () => {
 
       <Link to="/medicine" style={styles.Link}>
         <div style={styles.box}>
-          <h1 style={styles.H1}> اطلب الدواء </h1>
-          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 200 50">
-            <rect x="0" y="0" width="200" height="50" rx="25" ry="25" fill="maroon" stroke="orange" strokeWidth="3"/>
-            <text x="50%" y="50%" fontFamily="Arial" fontSize="20" fill="white" textAnchor="middle" alignmentBaseline="middle">Order now</text>
-          </svg>
+          <img src="/wallpaperflare.com_wallpaper(5).jpg" alt="icon" style={styles.icon} />
+          <h1 style={styles.H1}>Order Medicin</h1>
+          <img src="/order_now.svg" alt="icon" style={styles.orderIcon} />
           <p style={styles.Body}>
             نوصلك لك الدواء في أسرع وقت.
           </p>
@@ -45,72 +39,80 @@ const Food = () => {
     </div>
   );
 };
-
 const styles = {
   container: {
-    display: "flex", // لتوزيع العناصر أفقيًا جنبًا إلى جنب
-    justifyContent: "space-between", // لضمان أن تكون المربعات موزعة بالتساوي
-    alignItems: "flex-start", // لضبط العناصر رأسياً مع التباعد من الأعلى
-    margin: "20px", // إضافة مساحة حول الـ container
-    gap: "20px", // إضافة المسافة بين المربعات
-    flexWrap: "wrap", // لتسمح للمربعات بالانتقال إلى السطر التالي عند الحاجة
-  },
- Link: {
-    textDecoration: "none", // لإزالة الخط السفلي من الروابط
+    display: "flex",
+    flexWrap: " wrap", // ترتيب المربعات في عدة أسطر عند الحاجة
+    justifyContent: "center", // توسيط العناصر داخل الحاوية
+    alignItems: "stretch", // التأكد من أن جميع المربعات تأخذ نفس الارتفاع
+    gap: "20px", // مسافة ثابتة بين المربعات
+    margin: "20px auto",
+    padding: "0 10px",
   },
   box: {
-    flex: 1, // لجعل المربعات مرنة بحيث تأخذ نفس العرض
-    minWidth: "200px", // لضمان أن المربع لا يصبح ضيقًا جدًا
-    height: "400px", // تحديد ارتفاع كل مربع
-    backgroundColor: "#ff7e5f", // خلفية ملونة للمربعات
-    color: "#fff", // لون النص داخل المربعات
-    display: "flex", // استخدام flex داخل المربع
-    flexDirection: "column", // ترتيب النصوص عموديًا
-    justifyContent: "flex-start", // محاذاة المحتوى إلى أعلى المربع
-    alignItems: "flex-start", // محاذاة النص إلى اليسار
-    padding: "20px", // إضافة padding للمربع
-    borderRadius: "10px", // لتنعيم الزوايا
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // إضافة ظل خفيف
-    transition: "all 0.3s ease-in-out", // إضافة تأثير لتغيير الحجم
+    flex: "1 1 calc(33.333% - 40px)", // حجم المربع يكون ثلث العرض
+    maxWidth: "450px", // عرض المربع الأقصى
+    minHeight: "400px", // الحد الأدنى لارتفاع المربع
+    backgroundColor: "#ff7e5f",
+    color: "#fff",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    padding: "20px",
+    borderRadius: "10px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    position: "relative",
+    overflow: "hidden",
+    transition: "transform 0.3s ease-in-out",
+  },
+  icon: {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    zIndex: "0",
+  },
+  orderIcon: {
+    position: "absolute",
+    bottom: "30px",
+    right: "20px",
+    width: "100px",
+    height: "80px",
+    zIndex: "1",
   },
   H1: {
-    color: "rgb(0,0,0,0.8)", 
-    fontSize: "30px", // حجم النص
-    fontWeight: "bold", // جعل النص عريض
-    textAlign: "left", // محاذاة النص إلى اليسار
-    margin: "0", // إزالة الهوامش
+    fontSize: "50px",
+    fontWeight: "bold",
+    color: "rgba(0,0,0,0.8)",
+    margin: "0",
+    zIndex: "0",
   },
-
   Body: {
-    color: "rgba(0, 0, 0, 0.8)",
-    position: "relative",
-    bottom: "-150px",
-    left: "10px",
-    fontSize: "20px",
-    fontWeight: "normal",
-    textAlign: "left",
-    margin: "80px auto",
+    fontSize: "40px",
+    color: "rgba(255,255,255,0.8)",
+    zIndex: "0",
+    marginTop: "10px",
+  },
+  Link: {
+    textDecoration: "none",
   },
 
-  // إضافة استجابة للشاشات الصغيرة
+  // استجابة للشاشات الصغيرة
   "@media (max-width: 768px)": {
     container: {
-      flexDirection: "column", // تغيير اتجاه العناصر عند الشاشات الصغيرة
-      gap: "10px", // تقليل المسافة بين المربعات
+      flexDirection: "column", // ترتيب المربعات عموديًا
+      gap: "15px", // تقليل المسافة بين المربعات
     },
     box: {
-      flex: "none", // إعادة ضبط العرض ليكون مناسبًا للشاشات الصغيرة
-      width: "100%", // المربعات تأخذ عرض 100% من الشاشة
-      height: "auto", // تعديل الارتفاع ليكون تلقائي
+      flex: "1 1 100%", // المربع يأخذ عرض الشاشة بالكامل
+      maxWidth: "100%", // عرض كامل للشاشة
+      minHeight: "400px", // نفس الحد الأدنى للارتفاع
     },
-    H1: {
-      fontSize: "24px", // تقليل حجم الخط للشاشات الصغيرة
-    },
-    H2: {
-      fontSize: "14px", // تقليل حجم الخط للشاشات الصغيرة
-    }
   },
 };
 
-export default Food;
 
+export default Food;

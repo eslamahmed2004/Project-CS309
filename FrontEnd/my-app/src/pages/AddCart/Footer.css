@@ -1,0 +1,95 @@
+.footer {
+    background-color: #262626;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    bottom: -100px; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    transition: bottom 0.3s ease;
+    z-index: 1000; 
+}
+
+.footer-top {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #868686;
+    margin: 0 50px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links a:hover {
+    text-align: left;
+    color: #868686;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    text-align: left; /* لجعل النصوص تبدأ من الشمال */
+    color: #868686;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    text-align: left; /* لجعل النصوص داخل العناصر تبدأ من الشمال */
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600;
+}
+
+.social-icons a {
+    text-align: left;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    text-align: left;
+    color: #ff6600;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.divider {
+    border: 0;
+    border-top: 0.01em solid #979797; /* لون وسمك الخط */
+    margin: 50px 0; /* المسافة حول الخط */
+}
+
+.divider1 {
+    border: 0;
+    width: 50%;
+    border-top: 0.01em solid #979797; /* لون وسمك الخط */
+    margin: 50px 0;
+    margin: 20px auto; /* المسافة حول الخط */
+}
+
